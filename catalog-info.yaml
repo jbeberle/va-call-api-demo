@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: lighthouse-va-callcenter
+  description: A Spring Boot service for the REST API to handle vet calls to the VA call center
+  title: VA Call Center API
+  tags:
+    - lighthouse
+    - external
+    - java
+  links:
+    - url: https://developer.va.gov/explore/api/vet-calls
+      title: Vet Calls To Call Center
+      icon: web
+  spec:
+    type: openapi
+    lifecycle: experimental
+    owner: lighthouse-callcenter
+    system: vets-api
+    definition:
+      $text: https://api.va.gov/internal/docs/benefits-documents/v1/openapi.json
